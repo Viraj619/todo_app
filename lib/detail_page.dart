@@ -66,8 +66,10 @@ class DetailPage extends StatelessWidget{
                     padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
+                        /// date
                         Text("Date :",style: mTextStyle16(),),
                         SizedBox(width: 5,),
+                        /// date
                         Text('${mFormat.format(DateTime.fromMillisecondsSinceEpoch(int.parse(TodoNotes[dIndex].created_At)))}'),
                       ],
                     ),
